@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chrome</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/chrome.css">
+</head>
+<body>
+    <div class="image">
+        <div class="topTexts">
+            <h2 class="clock">00:00:00</h2>
+            <form class="hidden loginForm">
+                <input required maxlength="15" type="text" placeholder="What is your name?">
+                <!-- required는 필수입력창으로 만들어줄 수 있음 
+                maxlength 15자 이상으로 넘어가지 않게 만들어줄 수 있음.  -->
+                <input type="submit" value = "Log in">
+                <!-- 버튼 역할을 해줌 이렇게 하면 내용이 넘어가고 엔터를 눌러도 submit이 됨 -->
+            </form>
+            <h1 id="greeting" class="hidden"></h1>
+            <form class="todoForm">
+                <input type="text" placeholder="Write To Do here" required>
+            </form>
+            <ul class="todoList"></ul>
+        </div>
+        <div class="quote">
+            <span></span>
+        </div>
+    </div>
+    <div class="weather">
+        <span></span>
+        <span></span>
+    </div>
+
+    <script src="./js/greetings.js"></script>
+    <script src="./js/clock.js"></script>
+    <script src="./js/quotes.js"></script>
+    <script src="./js/background.js"></script>
+    <script src="./js/todo.js"></script>
+    <script src="./js/weather.js"></script>
+</body>
+</html>
